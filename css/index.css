@@ -2,7 +2,7 @@
 
 :root{
     --black: #2c2c54;
-    --pink: #D6E2E9;
+    --pink: #FAD2E1;
 }
 
 *{
@@ -40,7 +40,7 @@ header{
     position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
-    background: #FDE2E4;
+    background: #fff;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -121,10 +121,29 @@ header .icons a:hover{
     100% { margin-left: -300%; }
 }
 
+.slider2{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
 
+.slider2 ul{
+    display: flex;
+    width: 100%;
+}
 
+.slider2 li{
+    width: 300%;
+    list-style: none;
+}
 
-
+.slider2 img{
+    width: 100%;
+    padding: auto;
+    border: 0;
+    
+    
+}
 
 
 
