@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-gap: 10px;
+    /*1fr es fracción para que se distribulla de manera equitativa*/
+    grid-template-columns: repeat(4, 1fr); 
+    max-width: 500px;
+    margin:auto;
+}
+figure,
+figure img{
+    /*display para manipular*/
+    display: inline-block;
+    /*100 % del contenedor*/
+    width: 100%;
+}
+figure{
+    /*para usar el absolute despues*/
+    position: relative;
+    /*para dar propiedad de 3d*/
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0);
+}
+figure .searched-image{
+    position: absolute;
+    top: 0;
+}
