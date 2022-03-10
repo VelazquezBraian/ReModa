@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+body{
+    background-color: rgba(34, 120, 248, 0.644);
+    font-family: nunito;
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
+}
