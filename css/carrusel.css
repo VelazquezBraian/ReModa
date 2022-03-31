@@ -15,8 +15,13 @@ a{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 2);
     border-radius: 10px;
     overflow: hidden;
-    
+    justify-content: space-between;
+    align-items: flex-start;
+    display: inline-block;
+    align-items: center;
+    margin: 8px;
 }
+
 
 .slide-img{
     height: 450px;
@@ -32,12 +37,13 @@ a{
 
 .detail-box{
     width: 100%;
+    font-weight: 900;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
-    font-family: calibri;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .type{
@@ -50,11 +56,13 @@ a{
     margin: 5px 0px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    padding-right: 8px;
+    padding-left: 30%;
+    
 }
 
 .type span{
     color: rgba(26, 26, 26, 0.5);
+    padding-left: 30%;
 }
 
 .precio{
@@ -63,6 +71,7 @@ a{
     font-size: 1.1rem;
     font-family: poppins;
     letter-spacing: 0.5px;
+    padding-left: 30%;
 }
 
 .overlay{
@@ -117,6 +126,69 @@ a{
     }
 }
 
-li{
-    align-items: flex-start;
-}
+.container{
+    margin: auto;
+    /*background-color: #D6E2E9;*/
+    width: 800px;
+    padding: 30px;
+    margin: none;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:white;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.slider li:target {
+      opacity: 1; 
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    /*background-color: black;*/
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
